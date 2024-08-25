@@ -51,7 +51,6 @@
       <!-- Avoid this method -->
 
       <!-- Radio button -->
-      
 
       <!-- Radio button -->
     </form>
@@ -64,37 +63,80 @@
     </form>
     <!-- Button type action -->
 
+    <form action="/server">
+      <br />
+      <label for="apple">apple :</label>
+      <input type="radio" name="fruit" id="apple" value="apple" />
+      <br />
+      <label for="banna">banna :</label>
+      <input type="radio" name="fruit" id="banana" value="banana" />
+      <br />
 
+      <label for="manngo">manngo :</label>
+      <input type="radio" name="fruit" id="mango" value="mango" />
+
+      <button>Search</button>
+    </form>
 
     <form action="/server">
-        <br />
-        <label for="apple">apple :</label>
-        <input type="radio" name="fruit" id="apple" value="apple" />
-        <br />
-        <label for="banna">banna :</label>
-        <input type="radio" name="fruit" id="banana" value="banana" />
-        <br />
+      <br />
+      <label for="apple">apple :</label>
+      <input type="checkbox" name="fruit" id="apple" value="apple" />
+      <br />
+      <label for="banna">banna :</label>
+      <input type="checkbox" name="fruit" id="banana" value="banana" />
+      <br />
 
-        <label for="manngo">manngo :</label>
-        <input type="radio" name="fruit" id="mango" value="mango" />
+      <label for="manngo">manngo :</label>
+      <input type="checkbox" name="fruit" id="mango" value="mango" />
 
-        <button>Search</button>
-      </form>
+      <button>Search</button>
+    </form>
+
+    <!-- Select/Dropdown -->
 
     <form action="/server">
-        <br />
-        <label for="apple">apple :</label>
-        <input type="checkbox" name="fruit" id="apple" value="apple" />
-        <br />
-        <label for="banna">banna :</label>
-        <input type="checkbox" name="fruit" id="banana" value="banana" />
-        <br />
+      <select name="proffesion" id="proffesion">
+        <option>Student your option</option>
+        <option value="student" selected>Student</option>
+        <option value="dev" selected>Developer</option>
+      </select>
+      <button>done</button>
+    </form>
 
-        <label for="manngo">manngo :</label>
-        <input type="checkbox" name="fruit" id="mango" value="mango" />
+    <form action="/server">
+        <label for="vol">Select your volum level :</label>
+      <input type="range" name="volume" id="vol" min="0" max="100" value="70"/>
+      <button>done</button>
 
-        <button>Search</button>
-      </form>
+    </form>
+    <!-- Select/Dropdown -->
+
+    <form action="/server">
+<label for="firstname"></label>
+        <input type="text" placeholder="Enter first name" id="firstname" name="firstname">
+
+        <label for="lastname"></label>
+        <input type="text" placeholder="Enter last name" id="lastname" name="lastname" >
+
+        <label for="gender"> Choose your gener: </label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="fmale">FeMale</option>
+        </select>
+
+
+    <div>
+        Do you agree to all term and condition ? 
+        <input type="checkbox" id="tos_agree" name="tos_agree">
+        <label for="tos_agree"> Yes i am agree👍</label>
+        <button>done</button>
+    </div>
+
+    </form>
+
+
+
 
 
   </body>
